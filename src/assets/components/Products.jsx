@@ -3,7 +3,7 @@ import getApiData from './index'
 import Button from './Button'
 import Filter from '../Filter'
 import ViewDetails from './ViewDetails/ViewDetails'
-import Wishlist from '../Wishlist/Wishlist'
+// import Wishlist from '../Wishlist/Wishlist'
 const Products = () => {
 
   let [data, setData] = useState([])
@@ -33,7 +33,7 @@ const Products = () => {
             filterData.slice(0, 24).map((items, i) => (
               <div key={i} className="rounded-xl p-5 bg-amber-50 shadow-md">
                 <img src={items.images[0]} alt="" className='' />
-                <Wishlist text={"hello12"} /> 
+                
                 {
                   items.availabilityStatus === "In Stock" ? 
                   <p className='text-green-500'>Available</p>
